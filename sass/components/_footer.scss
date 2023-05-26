@@ -1,0 +1,76 @@
+.footer{
+    color: $text-light;
+    padding: 60px 0;
+    background-color: $bgcolor-dark;
+
+    &__wrapper{
+        display: flex;
+        gap: 70px;
+
+    }
+
+    &__list{
+        font-size: 14px;
+        line-height: 1.71;
+        font-style: normal;
+        color: $bgcolor-light;
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        margin-top: 20px;
+
+    }
+
+    &__link{
+        color: rgba(255, 255, 255, 0.6);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    &__link:is(:hover, :focus){
+        color: $color-active;
+    }
+
+    &__socials{
+        margin-top: 12px;
+
+    }
+
+    &__socials-title{
+        font: $font-roboto;
+        font-weight: $font-weight700;
+        font-size: 14px;
+        line-height: 1.14;
+        color: $bgcolor-light;
+
+    }
+
+    &__socials-list{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        padding-top: 20px;
+
+    }
+
+    &__socials-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: $bgcolor-light;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 12px;
+        border-radius: 50%;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    &__socials-icon:is(:hover, :focus){
+        background-color: $color-active;
+    }
+
+
+  
+}

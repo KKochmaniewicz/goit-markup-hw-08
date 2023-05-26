@@ -1,0 +1,68 @@
+.newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+
+    &__title{
+        font-family: $font-roboto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.14;
+        color: $bgcolor-light;
+        padding-bottom: 20px;
+
+    }
+
+    &__textarea{
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: $bgcolor-dark;
+        padding-left: 16px;
+        color: rgba(255, 255, 255, 0.6);
+
+    }
+
+    &__textarea::placeholder {
+        font-family: $font-roboto;
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6)
+    }
+
+    &__submit-btn{
+        width: 200px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: $color-active;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        margin-top: 36px;
+        margin-left: 12px;
+        gap: 24px;
+        font-family: $font-roboto;
+        font-weight: $font-weight700;
+        font-size: 16px;
+        line-height: 1.88;
+        color: $bgcolor-light;
+
+    }
+
+    &__btn-icon{
+        fill: $bgcolor-light;
+
+    }
+}
+
+input:focus-within,
+textarea:focus-within,
+input:focus-within + svg {
+  border-color: $color-active;
+  fill: $color-active;
+}

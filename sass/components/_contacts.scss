@@ -1,0 +1,22 @@
+.contacts{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+    &__link{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $text-light;
+        font-size: 14px;
+        line-height: 1.14;
+        font-weight: 500;
+        fill: currentColor;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:is(:hover, :focus){
+        color: $color-active
+    }
+}

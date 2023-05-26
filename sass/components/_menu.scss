@@ -1,0 +1,23 @@
+.menu{
+    background-color: $bgcolor-light;
+    display: flex;
+    gap: 93px;
+    align-items: center;
+
+    &__logo{
+        font-family: $font-raleway;
+        font-weight: $font-weight700;
+        font-size: 26px;
+        line-height: 1.19;
+        color: $color-active;
+
+        &--top{
+            color: #000000;
+        }
+
+        &--bottom{
+            color: $bgcolor-light;
+        }
+
+    }
+}
