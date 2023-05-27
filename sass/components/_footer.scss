@@ -100,4 +100,8 @@
   &__socials-icon:is(:hover, :focus) {
     background-color: $color-active;
   }
+
+  &__newsletter {
+    margin-top: 12px;
+  }
 }

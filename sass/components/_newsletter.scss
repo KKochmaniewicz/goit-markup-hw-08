@@ -9,11 +9,11 @@
   }
 
   &__item {
-    width: 100%;
+    min-width: 100%;
 
-    // @include desktop {
-    //   width: 100%;
-    // }
+    @include desktop {
+      min-width: 358px;
+    }
   }
 
   &__title {
@@ -66,16 +66,17 @@
     font-size: 16px;
     line-height: 1.88;
     color: $bgcolor-light;
+    padding: 11px 28px 10px 42px;
   }
 
   &__btn-icon {
     fill: $bgcolor-light;
   }
-}
 
-input:focus-within,
-textarea:focus-within,
-input:focus-within + svg {
-  border-color: $color-active;
-  fill: $color-active;
+  input:focus-within,
+  textarea:focus-within,
+  input:focus-within + svg {
+    border-color: $color-active;
+    fill: $color-active;
+  }
 }
