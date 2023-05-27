@@ -1,0 +1,111 @@
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container {
+  background-color: #ffffff;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(100%);
+  transition-duration: 750ms;
+
+  &__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__close-btn:is(:hover, :focus) {
+    cursor: pointer;
+    fill: $color-active;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+
+  &__link-list {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 302px;
+  }
+
+  &__link {
+    font-weight: $font-weight500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+    color: $text-primary;
+    font-style: normal;
+  }
+
+  &__link--active {
+    color: $color-active;
+  }
+
+  &__link:is(:hover, :focus) {
+    color: $color-active;
+  }
+
+  &__contact-list {
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+
+  &__tel {
+    font-weight: $font-weight500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: $color-active;
+  }
+
+  &__mail {
+    font-weight: $font-weight500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $text-light;
+  }
+
+  &__social-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  &__social {
+    font-weight: $font-weight500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $color-active;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+.header-hamburger {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.header-hamburger:is(:hover, :focus) {
+  fill: $color-active;
+}

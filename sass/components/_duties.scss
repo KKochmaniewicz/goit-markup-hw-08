@@ -1,6 +1,7 @@
 .duties{
     margin-top: -94px;
-
+    display:none;
+  
     &__title{
         font-weight: $font-weight700;
         font-size: 36px;
@@ -13,7 +14,9 @@
 
     &__list{
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        text-align: center;
         gap: 30px;
 
     }
@@ -21,7 +24,7 @@
     &__list-img{
         position: relative;
         display: inline-flex;
-
+        
     }
 
     &__list-img-title{
@@ -39,4 +42,5 @@
         line-height: 1.14;
 
     }
+    
 }

@@ -1,6 +1,14 @@
-.container{
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+.container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @include tablet {
+    max-width: $maxwidth-tablet;
+  }
+
+  @include desktop {
+    max-width: $maxwidth-desktop;
+  }
 }

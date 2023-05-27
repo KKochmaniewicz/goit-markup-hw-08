@@ -1,15 +1,22 @@
 .customers{
     font-weight: $font-weight700;
-    font-size: 36px;
-    line-height: 1.67;
+    font-size:28px;
+    line-height: 1.18;
     text-align: center;
     color: $text-primary;
     margin-bottom: 50px;
 
+    // dodać dla innych urzadzeń czcionki
+
     &__list{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
+
+        @include desktop{
+            flex-wrap: nowrap;
+        }
 
     }
 

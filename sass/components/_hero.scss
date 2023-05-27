@@ -1,19 +1,73 @@
 .hero{
     background-color: $bgcolor-dark;
     text-align: center;
-    background-image: url(../images/hero.jpg),
+    background-image: url(../images/heromobile1x.jpg),
       linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     background-repeat: no-repeat;
-    background-position: 50% 50%; 
+    background-position: 50% 50%;
+    background-size: cover;
+    
+
+    @media (min-device-pixel-ratio: 2){
+        background-image: url(../images/heromobile2x.jpg);
+        background-size: cover;
+        
+    }
+
+    @include tablet{
+        @media screen {
+           
+            background-image: url(../images/herotablet1x.jpg);
+            background-size: cover;
+    
+        }
+    
+        @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/herotablet2x.jpg);
+            background-size: cover;
+            
+        }
+    }
+
+    @include desktop{ 
+        @media screen {
+            background-image: url(../images/herodesktop1x.jpg);
+            background-size: cover;
+
+        }
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/herodesktop2x.jpg);
+        background-size: cover;
+
+    
+        }
+    }
 
     &__slogan{
         font-weight: $font-weight900;
-        font-size: 44px;
-        line-height: 1.36;
+        font-size: 26px;
+        line-height: 1.62;
         text-align: center;
         letter-spacing: 0.06em;
         color: $bgcolor-light;
-        margin: 106px 252px 30px 252px;
+        margin: 58px 58px 30px 57px;
+
+        @include tablet{
+            margin: 58px 201px 30px 202px;
+        }
+
+        @include desktop{
+            font-size: 44px;
+            line-height: 1.36;
+            margin: 106px 252px 30px 252px;
+        }
     }
 
     &__button{
@@ -27,7 +81,15 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         border: none;
-        margin-bottom: 106px;
+        margin-bottom: 58px;
         padding: 10px 41px 10px 42px;
+
+        @include tablet{
+            margin-bottom: 68px;
+        }
+
+        @include desktop{
+            margin-bottom: 106px;
+        }
     }
 }

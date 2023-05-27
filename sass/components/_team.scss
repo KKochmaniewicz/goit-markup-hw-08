@@ -3,18 +3,31 @@
 
     &__title{
         font-weight: $font-weight700;
-        font-size: 36px;
-        line-height: 1.67;
+        font-size: 28px;
+        line-height: 1.78;
         text-align: center;
         color: $text-primary;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+
+        // dodać czcionki dla innych urządzeń
 
     }
 
     &__list{
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 30px;
+
+        @include tablet{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        @include desktop{
+            flex-wrap: nowrap;
+        }
 
     }
 
@@ -23,21 +36,20 @@
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
-        width: 270px;
 
     }
 
     &__list-employee-name{
         font-size: 16px;
         font-weight: $font-weight500;
-        line-height: 1.1875;
+        line-height: 1.19;
         text-align: center;
         color: $text-primary;
         margin-top: 30px;
 
     }
 
-    &__list_employee-job{
+    &__list-employee-job{
         text-align: center;
         line-height: 1.1875;
         color: $text-light;
@@ -70,4 +82,10 @@
          background-color: $color-active;
 
     }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
 }

@@ -1,5 +1,8 @@
 @import './utils/variables';
+@import './utils/_mixins';
+
 @import './base/reset';
+
 @import './components/_contacts';
 @import './components/_header';
 @import './components/_menu';
@@ -15,4 +18,6 @@
 @import './components/newsletter';
 @import './components/modal';
 @import './components/category';
-@import './components/grid'
+@import './components/grid';
+@import './components/menu-mobile'
+
