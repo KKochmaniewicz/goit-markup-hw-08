@@ -1,7 +1,6 @@
 .modal {
   max-width: 450px;
   width: 90%;
-  min-height: 609px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
@@ -9,6 +8,8 @@
   transition-duration: 750ms;
   transform: translateY(0);
   padding: 40px;
+  min-height: 609px;
+  overflow-y: auto;
 
   &__close-btn {
     position: absolute;
@@ -153,6 +154,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .is-hidden {
