@@ -10,6 +10,9 @@
 
   &__item {
     min-width: 100%;
+    @include tablet {
+      max-width: 450px;
+    }
 
     @include desktop {
       min-width: 358px;

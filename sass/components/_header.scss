@@ -3,7 +3,7 @@
   padding: 10px 0;
 
   @include tablet {
-    padding: 21px 0;
+    padding: 19px 0;
   }
 
   @include desktop {
@@ -13,6 +13,7 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &header__open-menu {

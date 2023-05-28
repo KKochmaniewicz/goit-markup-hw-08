@@ -25,18 +25,12 @@
     fill: $color-active;
   }
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    margin-left: 40px;
-  }
-
   &__link-list {
-    margin-top: 48px;
     display: flex;
     flex-direction: column;
     gap: 32px;
-    margin-bottom: 302px;
+    margin-left: 40px;
+    margin-top: 48px;
   }
 
   &__link {
@@ -59,6 +53,7 @@
   &__contact-list {
     gap: 32px;
     margin-bottom: 64px;
+    margin-left: 40px;
   }
 
   &__tel {
@@ -81,6 +76,8 @@
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    margin-left: 40px;
+    margin-bottom: 48px;
   }
 
   &__social {
